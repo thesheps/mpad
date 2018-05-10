@@ -1,7 +1,12 @@
 <template>
-  <div id="app">
-    <Editor />
-    <Preview />
+  <div id="app" class="columns">
+    <div class="column">
+      <Editor v-model="text" />
+    </div>
+
+    <div class="column">
+      <Preview :text="text" />
+    </div>    
   </div>
 </template>
 
@@ -10,7 +15,12 @@ import Editor from "./components/Editor.vue";
 import Preview from "./components/Preview.vue";
 
 export default {
+  name: "App",
   components: { Editor, Preview },
-  name: "App"
+  data() {
+    return {
+      text: ""
+    }
+  }
 };
 </script>
