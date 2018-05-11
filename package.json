@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "buefy": "^0.6.5",
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^4.7.2",
     "showdown": "^1.8.6",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
